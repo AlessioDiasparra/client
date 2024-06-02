@@ -19,7 +19,7 @@ export function SignupForm() {
 		onSuccess: tokenResponse => {
 			localStorage.setItem("loginWith", "Google")
 			localStorage.setItem("accessToken", tokenResponse.access_token)
-			router.push("/")
+			router.push("/logged")
 		},
 	})
 
